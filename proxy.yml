@@ -1,0 +1,10 @@
+---
+
+- name: Configure reverse proxy
+  become: yes
+  serial: 5
+  strategy: free
+  hosts:
+    - reverse_proxy
+  roles:
+    - reaport
