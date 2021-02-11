@@ -1,7 +1,7 @@
 ---
 
 - name: Generate reaport file
-  shell: echo "reaport text" >> /tmp/reaport.csv
+  shell: date >> /tmp/reaport.csv
 
 - name: Store reaport file into host
   ansible.builtin.fetch:
